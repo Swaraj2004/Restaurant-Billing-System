@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Saira' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/x-icon" href="icons/restaurant.ico">
+    <link rel="stylesheet" href="style.css" id="index-css">
+</head>
+<body style="background-color: #b6d9ff;">
+    <div id="container">
+        <nav>
+            <div id="logo"><img src="icons/restaurant.png" alt="restaurant-logo" draggable="false"></div>
+            <div id="title">Restaurant Billing <br>System</div>
+            <div id="admin"><img src="icons/admin.png" draggable="false"><p>Admin</p></div>
+            <div id="index"><img id="home" src="icons/home.png" draggable="false"></div>
+        </nav>
+        <section class="item-container">
+            <!-- <div class="itembox">
+                <span class="code">1.</span>
+                <span class="item">Pizza</span>
+                <span class="quan">
+                    <span class="minus">-</span>
+                    <span class="qcount">0</span>
+                    <span class="plus">+</span>
+                </span>
+                <span class="price">₹150</span>
+            </div> -->
+        </section>
+        <section id="bill">
+            <div id="bill-head">
+                <span>BILL</span>
+            </div>
+            <div class="bill-text">Subtotal <span id="subtotal">₹0</span></div>
+            <div class="bill-text">Service(10%) <span id="service">₹0</span></div>
+            <div class="bill-text">SGST(9%) <span id="sgst">₹0</span></div>
+            <div class="bill-text">CGST(9%) <span id="cgst">₹0</span></div>
+            <hr>
+            <div class="bill-text">Total <span id="total">₹0</span></div>
+        </section>
+        <div id="input-container">
+            <div id="input-menu">
+                <span id="add-menu" class="menu-btn">Add Item</span>
+                <span id="remove-menu"class="menu-btn">Remove Item</span>
+            </div>
+            <section id="add-item">
+                <form action="" method="post">
+                    <input type="text" name="name" placeholder="Enter Food Name" autocomplete="off" class="val-input" id="new-item"><br>
+                    <input type="number" name="price" placeholder="Enter Food Price" autocomplete="off" class="val-input" id="new-price"><br>
+                    <div align="center"><input type="button" value="Add" class="submit-btn" id="add-btn"></div>
+                </form>
+            </section>
+            <section id="remove-item">
+                <form action="" method="post">
+                    <input type="number" name="code" placeholder="Enter Food Code" autocomplete="off" class="val-input" id="new-code"><br>
+                    <div align="center"><input type="button" value="Remove" class="submit-btn" id="remove-btn"></div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="restaurant.js"></script>
+</body>
+</html>
